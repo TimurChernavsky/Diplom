@@ -43,6 +43,7 @@ public class FileService {
             fileRepository.save(fileEntity);
         } catch (IOException e) {
             log.error("Error exception by save {}", e.getMessage());
+            e.printStackTrace();
         }
     }
 
