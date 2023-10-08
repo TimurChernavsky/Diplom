@@ -34,6 +34,7 @@ public class GzipUtils {
             result = bos.toByteArray();
         } catch (IOException e) {
             log.error("gzipCompress method IOException error {}", e.getMessage());
+            e.printStackTrace();
         }
         return result;
     }
@@ -51,6 +52,7 @@ public class GzipUtils {
             result = bos.toByteArray();
         } catch (IOException e) {
             log.error("gzipUncompress method IOException error {}", e.getMessage());
+            e.printStackTrace();
         }
         return result;
     }
