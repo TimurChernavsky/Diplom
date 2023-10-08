@@ -49,6 +49,7 @@ public class JWTFilter extends GenericFilterBean {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             response.getWriter().write(e.getMessage());
             log.error(e.getMessage());
+            e.printStackTrace();
         }
     }
 }
